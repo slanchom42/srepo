@@ -1,0 +1,46 @@
+#header {
+  border: 3px ridge #0000AA;
+  border-radius: 10px;
+  background-color: lightcyan;
+  font-size: 19px;
+}
+
+#sidebar-right {
+
+  float: right;
+  position: relative;
+  width: 30%;
+  height: 200px;
+  padding: 1px;
+  overflow: auto;
+}
+
+#sidebar-left {
+
+  float: left;
+  position: relative;
+  width: 30%;
+  height: 200px;
+  padding: 1px;
+  overflow: auto;
+}
+
+#content {
+  border: 1px solid black;
+  overflow: auto;
+  padding: 1px;
+  height: 200px;
+  overflow: auto;
+  color: blue;
+}
+
+#footer {
+  border: 3px ridge #0000CC;
+  border-radius: 10px;
+  position: relative;
+  bottom: 0;
+}
+
+.img-small {
+  width: 150px;
+}

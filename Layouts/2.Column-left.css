@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+.clearfix { clear:both; }
+body,html {height: 100vh;}
+
+#head { border: thin ridge black; height: 20%; }
+#body { border: thin ridge green; height: 70%; }
+#body-left { border: thin ridge red; float: left; width: 70%; height: 100%; }
+#body-right { border: thin ridge purple; float: right; width: 30%; height: 100%; }
+#bottom { border: thin ridge orange; height: 20%; }

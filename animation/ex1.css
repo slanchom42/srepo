@@ -1,0 +1,16 @@
+.xanxus {
+  width: 75px;
+  height: 126px;
+  background: url("Xanxusprite2.png");
+  animation: run 1s steps(9), out 5s steps(100);
+  margin-left: 0%;
+}
+
+@keyframes run {
+    100% { background-position: -675px;
+
+}
+
+# @keyframes out {
+    100% { margin-left: 675px; }
+}

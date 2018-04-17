@@ -3,14 +3,37 @@
   height: 126px;
   background: url("Xanxusprite2.png");
   animation: run 1s steps(9), out 5s steps(100);
-  margin-left: 0%;
+  position: absolute;
+  right: 200px;
+  top: 460px;
 }
 
 @keyframes run {
-    100% { background-position: -675px;
+    100% { background-position: -675px; }
 
 }
 
 # @keyframes out {
     100% { margin-left: 675px; }
+}
+
+.tsuna {
+  width: 150px;
+  height: 136px;
+  background: url("Tsunasprite1.png");
+  animation: run2 1s steps(11);
+  position: absolute;
+  left: 180px;
+  top: 470px;
+}
+
+@keyframes run2 {
+    100% { background-position: -1650px;}
+}
+
+body {
+background-image: url("background.png");
+background-repeat: no-repeat;
+background-size: 920px;
+position: relative;
 }

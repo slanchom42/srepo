@@ -2,33 +2,66 @@
   width: 75px;
   height: 126px;
   background: url("Xanxusprite2.png");
-  animation: run 1s steps(9), out 5s steps(100);
+  animation: run 1s steps(9) forwards;
   position: absolute;
-  right: 200px;
+  left: 600px;
   top: 460px;
-}
-
-@keyframes run {
-    100% { background-position: -675px; }
-
-}
-
-# @keyframes out {
-    100% { margin-left: 675px; }
 }
 
 .tsuna {
   width: 150px;
   height: 136px;
   background: url("Tsunasprite1.png");
-  animation: run2 1s steps(11);
+  animation: run2 1s steps(11), h 0s linear 1s infinite forwards;
   position: absolute;
   left: 180px;
   top: 470px;
 }
 
+.tsunattack {
+  width: 125px;
+  height: 136px;
+  background: url("Tsunaattack.png");
+  animation: h 0s linear 0s infinite forwards, a 0s linear 1s infinite forwards, attack 1s steps(14) 1s, out 1s linear 1s forwards;
+  position: absolute;
+  left: 190px;
+  top: 476px;
+}
+
+.xanxusjump {
+  width: 100px;
+  height: 180px;
+  background-image: url("Xanxusjump.png");
+  animation: h 0s linear 0s infinite forwards, a 0s linear 1s infinite forwards, run 1s steps(9);
+  position: absolute;
+  left: 600px;
+  top: 460px;
+}
+
+@keyframes run {
+    100% { background-position: -675px; }
+}
+
+@keyframes out {
+    100% { margin-left: 190px; }
+}
+
 @keyframes run2 {
     100% { background-position: -1650px;}
+}
+
+@keyframes attack {
+    100% { background-position: -1750px;}
+}
+
+@keyframes a {
+  from { opacity: 0; visibility: hidden; }
+  to { opacity: 1; visibility: visible; }
+}
+
+@keyframes h {
+  from { opacity: 1; visibility: visible; }
+  to { opacity: 0; visibility: hidden; }
 }
 
 body {

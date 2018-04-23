@@ -2,7 +2,7 @@
   width: 75px;
   height: 126px;
   background: url("Xanxusprite2.png");
-  animation: run 1s steps(9) forwards;
+  animation: run 1s steps(9) forwards, h 0s linear 1s infinite forwards;
   position: absolute;
   left: 600px;
   top: 460px;
@@ -15,7 +15,7 @@
   animation: run2 1s steps(11), h 0s linear 1s infinite forwards;
   position: absolute;
   left: 180px;
-  top: 470px;
+  top: 476px;
 }
 
 .tsunattack {
@@ -25,21 +25,25 @@
   animation: h 0s linear 0s infinite forwards, a 0s linear 1s infinite forwards, attack 1s steps(14) 1s, out 1s linear 1s forwards;
   position: absolute;
   left: 190px;
-  top: 476px;
+  top: 482px;
 }
 
 .xanxusjump {
   width: 100px;
   height: 180px;
   background-image: url("Xanxusjump.png");
-  animation: h 0s linear 0s infinite forwards, a 0s linear 1s infinite forwards, run 1s steps(9);
+  animation: h 0s linear 0s infinite forwards, a 0s linear 1s infinite forwards, jump 1s steps(8) 1s 1 forwards;
   position: absolute;
   left: 600px;
-  top: 460px;
+  top: 420px;
 }
 
 @keyframes run {
     100% { background-position: -675px; }
+}
+
+@keyframes jump {
+    100% { background-position: -800px; }
 }
 
 @keyframes out {

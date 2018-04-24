@@ -32,10 +32,40 @@
   width: 100px;
   height: 180px;
   background-image: url("Xanxusjump.png");
-  animation: h 0s linear 0s infinite forwards, a 0s linear 1s infinite forwards, jump 1s steps(8) 1s 1 forwards;
+  animation: h 0s linear 0s infinite forwards, a 0s linear 1s infinite forwards, jump 1s steps(8) 1s 1 forwards, h 0s linear 2s infinite forwards;
   position: absolute;
   left: 600px;
   top: 420px;
+}
+
+.xanxusattack {
+width: 130px;
+height: 130px;
+background-image: url("Xanxusattack.png");
+animation: h 0s linear 0s infinite forwards, a 0s linear 2s infinite forwards, attack2 1s steps(11) 2s 1 forwards;
+position: absolute;
+left: 565px;
+top: 470px;
+}
+
+.xanxusflame {
+  width: 100px;
+  height: 110px;
+  background-image: url("Xanxusflame.png");
+  animation: h 0s linear 0s infinite forwards, a 0s linear 2s infinite forwards, xanxusflame 0.9s steps(7) 2s 1 forwards;
+  position: absolute;
+  left: 555px;
+  top: 470px;
+}
+
+.tsunablock {
+  width: 300px;
+  height: 125px;
+  background-image: url("Tsunablock.png");
+  animation: h 0s linear 0s infinite forwards, a 3s linear 2s infinite forwards, tsunablock 1s steps (3) 1s 1 forwards;
+  position: absolute;
+  left: 190px;
+  top: 482px;
 }
 
 @keyframes run {
@@ -56,6 +86,20 @@
 
 @keyframes attack {
     100% { background-position: -1750px;}
+}
+
+@keyframes attack2 {
+    100% { background-position: -1430px;}
+}
+
+@keyframes xanxusflame {
+    100% { background-position: -700px;}
+    from { left: 555px; }
+    to { left: 415px; }
+}
+
+@keyframes tsunablock {
+  100% { background-position: -300px;}
 }
 
 @keyframes a {

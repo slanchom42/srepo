@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Basic</title>
+    <script type="text/javascript" src="calculator.js"></script>
+	</head>
+
+	<body><center>
+
+    <div class="calculator">
+
+			<button id="btn-1" onclick="1()">1</button>
+			<button id="btn-2" onclick="2()">2</button>
+			<button id="btn-3" onclick="3()">3</button>
+			<button id="btn-sum" onclick="sum()">+</button>
+			<br>
+			<button id="btn-4" onclick="4()">4</button>
+			<button id="btn-5" onclick="5()">5</button>
+			<button id="btn-6" onclick="6()">6</button>
+			<button id="btn-sub" onclick="sub()">-</button>
+			<br>
+			<button id="btn-7" onclick="7()">7</button>
+			<button id="btn-8" onclick="8()">8</button>
+			<button id="btn-9" onclick="9()">9</button>
+			<button id="btn-mul" onclick="mul()">*</button>
+			<br>
+			<button id="btn-." onclick=".()">.</button>
+			<button id="btn-0" onclick="0()">0</button>
+			<button id="btn-%" onclick="%()">%</button>
+			<button id="btn-div" onclick="div()">/</button>
+			<br>
+
+			<div style="margin-left: -1%;">
+			<button id="btn-=" onclick="=()">=</button>
+			<button id="btn-borr" onclick="borr">borr</button>
+			</div><p>
+			<label>Operand A: </label><input type="text" id="operand-a">
+			<label>Operand B: </label><input type="text" id="operand-b">
+
+			<label>Result: </label><input type="text" id="result">
+
+    </div>
+	</center>
+	</body>
+</html>

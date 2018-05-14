@@ -1,0 +1,7 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.clearfix { clear: both; }
+
+#board { text-align: center; width: 182px; height: 182px; border: thin solid red;}
+.row { width: 100%;}
+.cel { width: 60px; height: 60px; border: thin solid black; float: left; font-size: 30px; padding-top: 10px;}

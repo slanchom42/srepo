@@ -1,0 +1,12 @@
+#myCanvas { border: double #AA5555 4px;
+  border-radius: 20px;
+  background-color: lightcyan;
+}
+
+.clearfix { clear : both; }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
